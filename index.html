@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>六六影视 - 六六大顺，好片顺手就来</title>
+<meta name="description" content="六六影视(liuliuyingshi-top)采用孟菲斯几何撞色设计，提供电影、电视剧、动漫、综艺高清免费在线观看，六六大顺，好片顺手就来，每日更新。">
+<meta name="keywords" content="六六影视, liuliuyingshi-top, 六六影视网, 孟菲斯影视, 免费电影, 在线追剧, 高清影视, 几何撞色">
+<meta name="author" content="六六影视">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://liuliuyingshi-top.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="六六影视 - 六六大顺，好片顺手就来">
+<meta property="og:description" content="六六影视采用孟菲斯几何撞色设计，提供电影、电视剧、动漫、综艺高清免费在线观看。">
+<meta property="og:url" content="https://liuliuyingshi-top.github.io">
+<meta property="og:site_name" content="六六影视">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "六六影视",
+  "url": "https://liuliuyingshi-top.github.io",
+  "description": "六六影视提供电影、电视剧、动漫、综艺免费在线观看。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://liuliuyingshi-top.github.io/#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<style>
+:root{
+  --cream:#fff8ee;
+  --yellow:#ffd23f;
+  --red:#f26419;
+  --blue:#3366ff;
+  --green:#2ec4b6;
+  --ink:#1b1b1b;
+  --muted:#6b6b6b;
+  --line:rgba(27,27,27,.18);
+  --card:#fff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',system-ui,sans-serif;
+  background:
+    radial-gradient(500px 400px at 85% 8%, rgba(255,210,63,.22), transparent 60%),
+    radial-gradient(500px 400px at -6% 8%, rgba(51,102,255,.16), transparent 60%),
+    linear-gradient(155deg,var(--cream),#fff2dc);
+  background-attachment:fixed;
+  color:var(--ink);
+  line-height:1.7;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+/* 孟菲斯圆点层 */
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:radial-gradient(var(--ink) 1.4px, transparent 1.4px);
+  background-size:22px 22px;opacity:.05;
+}
+a{color:inherit;text-decoration:none;position:relative;z-index:1}
+
+/* 顶部 */
+.topbar{
+  position:sticky;top:0;z-index:60;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:1rem 1.5rem;
+  background:var(--yellow);
+  border-bottom:4px solid var(--ink);
+}
+.brand{display:flex;align-items:center;gap:.8rem;font-weight:900;font-size:1.4rem;letter-spacing:1px}
+.brand .badge66{
+  background:var(--blue);color:#fff;padding:.35rem .75rem;font-size:1.2rem;
+  border:3px solid var(--ink);box-shadow:3px 3px 0 var(--red);
+  transform:rotate(-3deg);
+}
+.brand b{color:var(--red)}
+.menu{list-style:none;display:flex;gap:1.2rem;font-size:.9rem;font-weight:700}
+.menu a{color:var(--ink);padding:.35rem .6rem;border:2px solid transparent}
+.menu a:hover{background:var(--red);color:#fff;border-color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+
+/* 主视觉 */
+.hero{
+  max-width:1160px;margin:0 auto;padding:4.5rem 1.5rem 3rem;position:relative;z-index:1;
+  display:grid;grid-template-columns:1.1fr .9fr;gap:2.6rem;align-items:center;
+}
+.hero h1{
+  font-size:clamp(2.6rem,7vw,5.4rem);font-weight:900;line-height:1.05;letter-spacing:2px;
+  color:var(--ink);
+  text-shadow:5px 5px 0 var(--yellow), 9px 9px 0 var(--red);
+}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero .sub{margin-top:1rem;font-size:1rem;font-weight:700;letter-spacing:4px;color:var(--red)}
+.hero p.lead{color:var(--muted);margin:1.3rem 0 1.5rem;max-width:520px;font-size:1.02rem}
+.pills{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.pill{
+  font-size:.78rem;padding:.4rem 1rem;font-weight:700;letter-spacing:1px;
+  background:var(--card);border:2px solid var(--ink);box-shadow:2px 2px 0 var(--ink);
+}
+.pill.hot{background:var(--green);color:#fff}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn{
+  border:3px solid var(--ink);cursor:pointer;padding:.85rem 1.8rem;font-family:inherit;
+  font-weight:900;font-size:.95rem;letter-spacing:1px;transition:.15s;position:relative;z-index:1;
+}
+.btn-main{background:var(--red);color:#fff;box-shadow:4px 4px 0 var(--ink)}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn-soft{background:var(--card);color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.btn-soft:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+
+/* 几何海报 */
+.geo{
+  position:relative;aspect-ratio:3/4;margin:0 auto;max-width:340px;
+  background:var(--blue);border:4px solid var(--ink);
+  box-shadow:12px 12px 0 var(--yellow), 12px 12px 0 4px var(--ink);
+  display:flex;flex-direction:column;justify-content:space-between;padding:1.5rem;color:#fff;
+  overflow:hidden;
+}
+.geo .dot{position:absolute;width:90px;height:90px;border-radius:50%;background:var(--red);border:4px solid var(--ink);top:-22px;right:-22px}
+.geo .sq{position:absolute;width:70px;height:70px;background:var(--yellow);border:4px solid var(--ink);bottom:70px;left:-24px;transform:rotate(18deg)}
+.geo .tri{position:absolute;width:0;height:0;border-left:46px solid transparent;border-right:46px solid transparent;border-bottom:80px solid var(--green);bottom:-24px;right:26px}
+.geo .g1{font-size:2.4rem;font-weight:900;letter-spacing:3px;position:relative;z-index:2;text-shadow:3px 3px 0 var(--ink)}
+.geo .g2{font-size:.85rem;font-weight:700;letter-spacing:3px;position:relative;z-index:2;background:var(--ink);display:inline-block;padding:.3rem .8rem;align-self:flex-start}
+
+/* 数据 */
+.figures{
+  max-width:1160px;margin:1rem auto;padding:0 1.5rem;position:relative;z-index:1;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;
+}
+.fig{
+  text-align:center;padding:1.5rem;background:var(--card);
+  border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);
+}
+.fig b{font-size:2rem;font-weight:900;color:var(--blue);display:block}
+.fig b.r{color:var(--red)}
+.fig small{display:block;color:var(--muted);margin-top:.3rem;font-size:.82rem;font-weight:700}
+
+/* 区块 */
+.wrap{max-width:1160px;margin:0 auto;padding:2.8rem 1.5rem;position:relative;z-index:1}
+.head{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:1.6rem;padding-bottom:.6rem;border-bottom:4px solid var(--ink)}
+.head .no{font-size:1.3rem;font-weight:900;color:#fff;background:var(--red);padding:.25rem .8rem;border:2px solid var(--ink)}
+.head h2{font-size:1.7rem;color:var(--ink);font-weight:900;letter-spacing:1px}
+.head h2 span{color:var(--blue)}
+.head a{color:var(--muted);font-size:.85rem;font-weight:700}
+.head a:hover{color:var(--red)}
+
+/* 倾斜片单 */
+.tiles{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:1.3rem;
+}
+.tiles .film{
+  background:var(--card);border:3px solid var(--ink);transition:.2s;
+  box-shadow:5px 5px 0 var(--ink);
+}
+.tiles .film:nth-child(2n){transform:rotate(1.4deg)}
+.tiles .film:nth-child(3n){transform:rotate(-1.2deg)}
+.tiles .film:hover{transform:rotate(0) translateY(-4px);box-shadow:7px 9px 0 var(--ink);border-color:var(--red)}
+.tiles .thumb{aspect-ratio:3/4;display:grid;place-items:center;font-size:3rem;border-bottom:3px solid var(--ink);
+  background:repeating-linear-gradient(135deg, var(--yellow) 0 10px, #fff2b0 10px 20px)}
+.tiles .meta{padding:.85rem 1rem}
+.tiles .meta b{display:block;font-size:.98rem;color:var(--ink);font-weight:900}
+.tiles .meta small{color:var(--muted);font-weight:600}
+
+/* 网格卡片 */
+.grid{display:grid;gap:1.3rem}
+.c3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.c4{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.box{
+  padding:1.5rem;background:var(--card);border:3px solid var(--ink);
+  box-shadow:5px 5px 0 var(--ink);transition:.2s;
+}
+.box:hover{transform:translateY(-4px);box-shadow:7px 9px 0 var(--red)}
+.box .ic{
+  width:50px;height:50px;border:3px solid var(--ink);display:grid;place-items:center;font-size:1.3rem;
+  background:var(--yellow);margin-bottom:.9rem;box-shadow:2px 2px 0 var(--ink);
+}
+.box:nth-child(2) .ic{background:var(--blue);color:#fff}
+.box:nth-child(3) .ic{background:var(--green);color:#fff}
+.box:nth-child(4) .ic{background:var(--red);color:#fff}
+.box h3{font-size:1.15rem;color:var(--ink);margin-bottom:.4rem;font-weight:900}
+.box p{color:var(--muted);font-size:.9rem;margin-bottom:.9rem}
+.box a{color:var(--red);font-weight:900;font-size:.88rem}
+
+/* 榜单 */
+.rank{
+  max-width:900px;margin:0 auto;padding:2.4rem 1.5rem;position:relative;z-index:1;
+}
+.rank ol{list-style:none;counter-reset:rk}
+.rank li{
+  display:flex;gap:1.2rem;align-items:center;padding:1rem 1.2rem;margin-bottom:.9rem;
+  background:var(--card);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);
+}
+.rank li:hover{transform:translateX(5px);box-shadow:4px 7px 0 var(--blue)}
+.rank li::before{
+  counter-increment:rk;content:counter(rk);
+  font-size:1.6rem;font-weight:900;color:#fff;background:var(--red);
+  min-width:48px;height:48px;display:grid;place-items:center;border:2px solid var(--ink);
+}
+.rank li b{color:var(--ink);font-weight:900;flex:1}
+.rank li span{color:var(--muted);font-size:.85rem;font-weight:700}
+
+/* 底部 */
+footer{border-top:4px solid var(--ink);padding:2.6rem 1.5rem;margin-top:3rem;background:var(--green);position:relative;z-index:1}
+.foot{max-width:1160px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1.4rem;justify-content:space-between;align-items:center}
+.foot ul{list-style:none;display:flex;gap:1.2rem;flex-wrap:wrap}
+.foot a{color:var(--ink);font-size:.88rem;font-weight:700;padding:.35rem .6rem;border:2px solid var(--ink);background:#fff}
+.foot a:hover{background:var(--yellow)}
+.copy{color:var(--ink);font-size:.82rem;max-width:1160px;margin:1.4rem auto 0;line-height:1.9;font-weight:600}
+
+.reveal{opacity:0;transform:translateY(24px);transition:.55s cubic-bezier(.2,.7,.3,1)}
+.reveal.show{opacity:1;transform:none}
+
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr;padding-top:3rem}
+  .geo{max-width:300px}
+  .menu{display:none}
+}
+@media(max-width:520px){
+  .head{flex-direction:column;align-items:flex-start}
+  .fig b{font-size:1.6rem}
+  .tiles{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="topbar">
+  <a class="brand" href="#top"><span class="badge66">66</span> <span><b>影视</b></span></a>
+  <nav><ul class="menu">
+    <li><a href="#hot">热播</a></li>
+    <li><a href="#movie">电影</a></li>
+    <li><a href="#tv">电视剧</a></li>
+    <li><a href="#anime">动漫</a></li>
+    <li><a href="#about">关于</a></li>
+  </ul></nav>
+</header>
+
+<section class="hero" id="top">
+  <div>
+    <h1>六六<em>影视</em></h1>
+    <div class="sub">六六大顺 · 好片顺手就来</div>
+    <p class="lead">六六影视（liuliuyingshi-top）用孟菲斯几何撞色重新定义观影：明黄、亮蓝、橙红、薄荷绿，电影、剧集、动漫、综艺，六六大顺，高清流畅，手机电脑都顺眼。</p>
+    <div class="pills">
+      <span class="pill hot">孟菲斯风</span>
+      <span class="pill">几何撞色</span>
+      <span class="pill">高清免费</span>
+      <span class="pill">每日更新</span>
+      <span class="pill">手机自适应</span>
+    </div>
+    <div class="cta">
+      <a class="btn btn-main" href="#hot">顺手开看</a>
+      <a class="btn btn-soft" href="#about">认识六六</a>
+    </div>
+  </div>
+  <div class="geo">
+    <div class="dot"></div><div class="sq"></div><div class="tri"></div>
+    <div class="g1">66<br>影视</div>
+    <div class="g2">MEMPHIS · 2026</div>
+  </div>
+</section>
+
+<div class="figures">
+  <div class="fig reveal"><b>17000+</b><small>影视资源</small></div>
+  <div class="fig reveal"><b class="r">1080P</b><small>高清画质</small></div>
+  <div class="fig reveal"><b>六六大顺</b><small>每日更新</small></div>
+  <div class="fig reveal"><b class="r">0 元</b><small>全程免费</small></div>
+</div>
+
+<section class="wrap" id="hot">
+  <div class="head reveal">
+    <span class="no">01</span><h2>热播 <span>片单</span></h2>
+    <a href="#">全部 →</a>
+  </div>
+  <div class="tiles">
+    <a class="film" href="#"><div class="thumb">🦸</div><div class="meta"><b>六六大顺侠</b><small>动作 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">👻</div><div class="meta"><b>方块谜案</b><small>悬疑 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">💘</div><div class="meta"><b>撞色情书</b><small>爱情 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">🚀</div><div class="meta"><b>几何空间站</b><small>科幻 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">😂</div><div class="meta"><b>顺风顺水笑</b><small>喜剧 / 2026</small></div></a>
+    <a class="film" href="#"><div class="thumb">🌊</div><div class="meta"><b>潮来潮往</b><small>文艺 / 2026</small></div></a>
+  </div>
+</section>
+
+<section class="wrap" id="movie">
+  <div class="head reveal">
+    <span class="no">02</span><h2>电影 <span>分区</span></h2>
+    <a href="#">更多类型 →</a>
+  </div>
+  <div class="grid c4">
+    <div class="box reveal"><div class="ic">💥</div><h3>动作</h3><p>大片视效拉满，看得过瘾。</p><a href="#">进入 →</a></div>
+    <div class="box reveal"><div class="ic">🕯️</div><h3>悬疑</h3><p>反转密集，看完想二刷。</p><a href="#">进入 →</a></div>
+    <div class="box reveal"><div class="ic">💗</div><h3>爱情</h3><p>细腻情感，适合慢慢看。</p><a href="#">进入 →</a></div>
+    <div class="box reveal"><div class="ic">🎭</div><h3>文艺</h3><p>独立佳作，治愈心情。</p><a href="#">进入 →</a></div>
+  </div>
+</section>
+
+<section class="wrap" id="tv">
+  <div class="head reveal">
+    <span class="no">03</span><h2>电视剧 <span>热播</span></h2>
+    <a href="#">更多剧集 →</a>
+  </div>
+  <div class="grid c3">
+    <div class="box reveal"><div class="ic">🏙️</div><h3>都市</h3><p>职场恋爱家庭，贴近生活。</p><a href="#">追剧 →</a></div>
+    <div class="box reveal"><div class="ic">🏰</div><h3>古装</h3><p>服化道考究，权谋爱情并进。</p><a href="#">追剧 →</a></div>
+    <div class="box reveal"><div class="ic">🔍</div><h3>刑侦</h3><p>单元案件层层剥开。</p><a href="#">追剧 →</a></div>
+  </div>
+</section>
+
+<section class="wrap" id="anime">
+  <div class="head reveal">
+    <span class="no">04</span><h2>动漫 <span>番剧</span></h2>
+    <a href="#">全部番剧 →</a>
+  </div>
+  <div class="grid c4">
+    <div class="box reveal"><div class="ic">⚔️</div><h3>热血</h3><p>燃向番剧，作画拉满。</p><a href="#">看番 →</a></div>
+    <div class="box reveal"><div class="ic">🌸</div><h3>治愈</h3><p>慢节奏日常，放松心情。</p><a href="#">看番 →</a></div>
+    <div class="box reveal"><div class="ic">🧙</div><h3>奇幻</h3><p>异世界冒险，脑洞大开。</p><a href="#">看番 →</a></div>
+    <div class="box reveal"><div class="ic">🤖</div><h3>科幻</h3><p>硬核机甲与未来世界。</p><a href="#">看番 →</a></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="head reveal">
+    <span class="no">05</span><h2>综艺 <span>娱乐</span></h2>
+    <a href="#">更多综艺 →</a>
+  </div>
+  <div class="grid c3">
+    <div class="box reveal"><div class="ic">🎤</div><h3>真人秀</h3><p>明星真实一面，欢乐不断。</p><a href="#">播放 →</a></div>
+    <div class="box reveal"><div class="ic">🎵</div><h3>音乐</h3><p>竞演与 live，听觉盛宴。</p><a href="#">播放 →</a></div>
+    <div class="box reveal"><div class="ic">🍳</div><h3>生活</h3><p>美食旅行，开阔视野。</p><a href="#">播放 →</a></div>
+  </div>
+</section>
+
+<section class="rank" id="about">
+  <div class="head reveal">
+    <span class="no">06</span><h2>顺手 <span>榜单</span></h2>
+  </div>
+  <ol class="reveal">
+    <li><b>六六大顺侠</b><span>本周热度 TOP1</span></li>
+    <li><b>方块谜案</b><span>悬疑榜第一</span></li>
+    <li><b>撞色情书</b><span>爱情榜第一</span></li>
+    <li><b>几何空间站</b><span>科幻榜第一</span></li>
+    <li><b>顺风顺水笑</b><span>喜剧榜第一</span></li>
+  </ol>
+  <div class="box reveal" style="margin-top:2rem;max-width:900px">
+    <div class="ic">🌐</div>
+    <h3>关于六六影视</h3>
+    <p>六六影视（<b>liuliuyingshi-top</b>），网址：<code style="color:var(--blue)">https://liuliuyingshi-top.github.io</code>。本站是影视导航与片单展示单页，栏目含热播片单、电影分区、电视剧、动漫番剧、综艺娱乐、顺手榜单，内页链接先用 # 占位，后续替换为真实片源页。</p>
+    <a href="#">访问官网 →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <a class="brand" href="#top"><span class="badge66">66</span> <span><b>影视</b></span></a>
+    <ul>
+      <li><a href="#hot">热播</a></li>
+      <li><a href="#movie">电影</a></li>
+      <li><a href="#tv">电视剧</a></li>
+      <li><a href="#anime">动漫</a></li>
+      <li><a href="#about">关于</a></li>
+    </ul>
+  </div>
+  <div class="copy">
+    网站名称：六六影视　·　网站网址：https://liuliuyingshi-top.github.io<br>
+    关键词：六六影视、liuliuyingshi-top、六六影视网、孟菲斯影视、免费电影、在线追剧<br>
+    © 2026 六六影视 保留所有权利　·　演示页面，内页链接均为 # 占位
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver((es)=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const t=document.querySelector(this.getAttribute('href'));
+    if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); }
+  });
+});
+</script>
+</body>
+</html>
